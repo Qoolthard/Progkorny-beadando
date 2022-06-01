@@ -25,7 +25,6 @@ public class MetalCDServiceImpl implements MetalCDService {
     dataBase.add(new MetalCD(1L, "Number of the beast", Genre.HEAVY, Type.MAXI));
     dataBase.add(new MetalCD(2L, "Toxicity", Genre.NUMETAL, Type.MINI));
     dataBase.add(new MetalCD(3L, "Silverside", Genre.CLASSIC, Type.MINI));
-    dataBase.add(new MetalCD(4L, "Blonded by", Genre.TRASH, Type.SINGLE));
   }
 
   public MetalCDServiceImpl(final List<MetalCD> metalcds) {
