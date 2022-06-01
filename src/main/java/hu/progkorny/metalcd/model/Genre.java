@@ -1,5 +1,8 @@
-package hu.progkorny.MetalCD.model;
+package hu.progkorny.metalcd.model;
 
+/**
+ * GENRE ENUM.
+ */
 public enum Genre {
 
   TRASH,

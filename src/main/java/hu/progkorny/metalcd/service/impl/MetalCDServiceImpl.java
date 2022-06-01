@@ -1,16 +1,20 @@
-package hu.progkorny.MetalCD.service.impl;
+package hu.progkorny.metalcd.service.impl;
 
-import hu.progkorny.MetalCD.model.Type;
-import hu.progkorny.MetalCD.model.Genre;
-import hu.progkorny.MetalCD.model.MetalCD;
-import hu.progkorny.MetalCD.model.exception.NotFoundException;
-import hu.progkorny.MetalCD.service.MetalCDService;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import hu.progkorny.metalcd.model.Genre;
+import hu.progkorny.metalcd.model.MetalCD;
+import hu.progkorny.metalcd.model.Type;
+import hu.progkorny.metalcd.model.exception.NotFoundException;
+import hu.progkorny.metalcd.service.MetalCDService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * SERVICE IMPLEMENT.
+ */
 @Service
 public class MetalCDServiceImpl implements MetalCDService {
 
@@ -24,8 +28,8 @@ public class MetalCDServiceImpl implements MetalCDService {
     dataBase.add(new MetalCD(4L, "Blonded by", Genre.TRASH, Type.SINGLE));
   }
 
-  public MetalCDServiceImpl(final List<MetalCD> metalCDS) {
-    dataBase.addAll(metalCDS);
+  public MetalCDServiceImpl(final List<MetalCD> metalcds) {
+    dataBase.addAll(metalcds);
   }
 
   @Override

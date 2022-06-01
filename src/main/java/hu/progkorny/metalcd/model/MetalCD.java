@@ -1,7 +1,10 @@
-package hu.progkorny.MetalCD.model;
+package hu.progkorny.metalcd.model;
 
 import java.util.Objects;
 
+/**
+ * METAL CD MODEL CLASS.
+ */
 public class MetalCD {
 
   private Long id;
@@ -12,6 +15,9 @@ public class MetalCD {
   public MetalCD() {
   }
 
+  /**
+   * METAL CD CONSTRUCTOR.
+   */
   public MetalCD(final Long id,
                  final String name,
                  final Genre genre,

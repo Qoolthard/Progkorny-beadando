@@ -1,9 +1,12 @@
-package hu.progkorny.MetalCD.service;
-
-import hu.progkorny.MetalCD.model.MetalCD;
+package hu.progkorny.metalcd.service;
 
 import java.util.List;
 
+import hu.progkorny.metalcd.model.MetalCD;
+
+/**
+ * SERVICE INTERFACE.
+ */
 public interface MetalCDService {
 
   List<MetalCD> getAllMetalCDs();
