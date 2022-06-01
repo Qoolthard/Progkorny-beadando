@@ -60,7 +60,7 @@ class MetalCDServiceImplTest {
 	void createMetalCDShouldReturnRoleyPlayWhenDelegateIt() {
 		// given
 		final MetalCD blondedByMetalCD = new MetalCD(null, BLONDED_BY_METALCD_NAME, Genre.NUMETAL, Type.MAXI);
-		final MetalCD expectedBlondeByMetalCD = new MetalCD(3L, BLONDED_BY_METALCD_NAME, Genre.NUMETAL, Type.MAXI);
+		final MetalCD expectedBlondeByMetalCD = new MetalCD(4L, BLONDED_BY_METALCD_NAME, Genre.NUMETAL, Type.MAXI);
 		// when
 		final MetalCD actual = underTest.createMetalCD(blondedByMetalCD);
 		// then
