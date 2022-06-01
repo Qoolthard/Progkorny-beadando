@@ -1,4 +1,4 @@
-package hu.progkorny.MetalCD;
+package hu.progkorny.metalcd;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

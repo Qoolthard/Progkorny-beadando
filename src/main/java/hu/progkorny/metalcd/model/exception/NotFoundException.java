@@ -1,5 +1,8 @@
-package hu.progkorny.MetalCD.model.exception;
+package hu.progkorny.metalcd.model.exception;
 
+/**
+ * EXEPTIONS.
+ */
 public class NotFoundException extends RuntimeException {
 
   public NotFoundException() {
