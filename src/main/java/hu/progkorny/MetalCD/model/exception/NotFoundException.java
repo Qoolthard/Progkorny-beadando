@@ -1,4 +1,4 @@
-package hu.nye.progkor.roleplay.model.exception;
+package hu.progkorny.MetalCD.model.exception;
 
 public class NotFoundException extends RuntimeException {
 

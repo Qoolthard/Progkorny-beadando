@@ -1,4 +1,4 @@
-package hu.nye.progkor.roleplay.config;
+package hu.progkorny.MetalCD.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;

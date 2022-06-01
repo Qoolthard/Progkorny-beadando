@@ -1,9 +1,9 @@
-package hu.nye.progkor.roleplay.model;
+package hu.progkorny.MetalCD.model;
 
 public enum Genre {
 
-  HORROR,
-  FANTASY,
-  POST_APOCALYPTIC,
-  SCI_FI
+  TRASH,
+  HEAVY,
+  NUMETAL,
+  CLASSIC
 }

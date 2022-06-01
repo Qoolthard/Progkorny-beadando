@@ -1,25 +1,25 @@
-package hu.nye.progkor.roleplay.model;
+package hu.progkorny.MetalCD.model;
 
 import java.util.Objects;
 
-public class RolePlay {
+public class MetalCD {
 
   private Long id;
   private String name;
   private Genre genre;
-  private Complexity complexity;
+  private Type type;
 
-  public RolePlay() {
+  public MetalCD() {
   }
 
-  public RolePlay(final Long id,
-                  final String name,
-                  final Genre genre,
-                  final Complexity complexity) {
+  public MetalCD(final Long id,
+                 final String name,
+                 final Genre genre,
+                 final Type type) {
     this.id = id;
     this.name = name;
     this.genre = genre;
-    this.complexity = complexity;
+    this.type = type;
   }
 
   public Long getId() {
@@ -46,12 +46,12 @@ public class RolePlay {
     this.genre = genre;
   }
 
-  public Complexity getComplexity() {
-    return complexity;
+  public Type getType() {
+    return type;
   }
 
-  public void setComplexity(final Complexity complexity) {
-    this.complexity = complexity;
+  public void setType(final Type type) {
+    this.type = type;
   }
 
   @Override
@@ -59,19 +59,19 @@ public class RolePlay {
     if (this == o) {
       return true;
     }
-    if (!(o instanceof RolePlay)) {
+    if (!(o instanceof MetalCD)) {
       return false;
     }
-    final RolePlay rolePlay = (RolePlay) o;
-    return Objects.equals(id, rolePlay.id)
-            && Objects.equals(name, rolePlay.name)
-            && genre == rolePlay.genre
-            && complexity == rolePlay.complexity;
+    final MetalCD metalCD = (MetalCD) o;
+    return Objects.equals(id, metalCD.id)
+            && Objects.equals(name, metalCD.name)
+            && genre == metalCD.genre
+            && type == metalCD.type;
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, name, genre, complexity);
+    return Objects.hash(id, name, genre, type);
   }
 
   @Override
@@ -80,7 +80,7 @@ public class RolePlay {
             + "id=" + id
             + ", name='" + name + '\''
             + ", genre=" + genre
-            + ", complexity=" + complexity
+            + ", complexity=" + type
             + '}';
   }
 }
