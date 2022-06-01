@@ -18,16 +18,12 @@
 	<properties>
 		<java.version>17</java.version>
 		<jacoco.version>0.8.7</jacoco.version>
-		<coverage.branchLimit>0%</coverage.branchLimit>
-		<coverage.lineLimit>0%</coverage.lineLimit>
+		<coverage.branchLimit>80%</coverage.branchLimit>
+		<coverage.lineLimit>80%</coverage.lineLimit>
 		<coverage.type>BUNDLE</coverage.type>
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -35,12 +31,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -107,7 +97,10 @@
 				</executions>
 				<configuration>
 					<excludes>
-
+						<exclude>hu\progkorny\metalcd\MetalCdApplication.class</exclude>
+						<exclude>hu\progkorny\metalcd\config\**</exclude>
+						<exclude>hu\progkorny\metalcd\controller\**</exclude>
+						<exclude>hu\progkorny\metalcd\model\**</exclude>
 						<exclude>*Test</exclude>
 					</excludes>
 					<rules>
@@ -139,6 +132,17 @@
 					<consoleOutput>true</consoleOutput>
 					<failsOnError>true</failsOnError>
 					<linkXRef>false</linkXRef>
+					<violationSeverity>warning</violationSeverity>
+					<violationIgnore>
+						CustomImportOrder,
+						DesignForExtension,
+						HiddenField,
+						HideUtilityClassConstructor,
+						JavadocPackage,
+						JavadocVariable,
+						MissingJavadocMethod,
+						MissingJavadocType
+					</violationIgnore>
 				</configuration>
 				<dependencies>
 					<dependency>
