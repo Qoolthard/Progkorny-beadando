@@ -40,7 +40,7 @@ jobs:
           # Overwrite local artifact version
           mvn -B versions:set -DnewVersion="$version" --file pom.xml
           mvn -B deploy --file pom.xml
-          cp "target/Progkorny-beadando-${version}.jar" "target/Progkorny-beadando.jar"
+          cp "target/progkorny-beadando-${version}.jar" "target/progkorny-beadando.jar"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Log in to the Container registry
