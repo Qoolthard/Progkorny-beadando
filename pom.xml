@@ -146,7 +146,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/qoolthard/progkorny-beadando </url>
+            <url>https://maven.pkg.github.com/qoolthard/progkorny-beadando</url>
         </repository>
     </distributionManagement>
 
