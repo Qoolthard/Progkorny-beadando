@@ -10,13 +10,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @VERSION 0.0.1
  */
 @SpringBootApplication
-public class MetalCdApplication {
+public class MetalCDApplication {
 
     /**
      * THIS IS MAIN METHOD.
      */
     public static void main(String[] args) {
-        SpringApplication.run(MetalCdApplication.class, args);
+        SpringApplication.run(MetalCDApplication.class, args);
     }
 
 }
