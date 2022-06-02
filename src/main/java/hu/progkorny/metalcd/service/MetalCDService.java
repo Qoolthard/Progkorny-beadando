@@ -5,7 +5,7 @@ import java.util.List;
 import hu.progkorny.metalcd.model.MetalCD;
 
 /**
- * SERVICE INTERFACE.
+ * SERVICE INTERFACE FOR METALCD.
  */
 public interface MetalCDService {
 
