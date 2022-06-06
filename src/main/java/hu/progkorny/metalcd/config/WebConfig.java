@@ -6,7 +6,7 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
- * SPRING JAVA CONFIGURATION CLASS FOR WEB APPLICATION.
+ * SPRING   JAVA CONFIGURATION CLASS FOR WEB APPLICATION.
  */
 @Configuration
 @EnableWebMvc
