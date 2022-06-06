@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>hu.progkorny</groupId>
-    <artifactId>MetalCD</artifactId>
+    <artifactId>metal-cd</artifactId>
     <version>0.0.1</version>
     <description>Demo project for Spring Boot</description>
 
