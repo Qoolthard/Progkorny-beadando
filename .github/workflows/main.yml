@@ -10,7 +10,7 @@ on:
 env:
   DOCKER_REGISTRY: ghcr.io
   DOCKER_IMAGE_NAME: ${{ github.repository }}
-  HEROKU_APP_NAME: 'metalcdbeadando'
+  HEROKU_APP_NAME: 'metal-cd'
 
 jobs:
   build:
