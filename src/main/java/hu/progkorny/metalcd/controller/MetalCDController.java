@@ -48,7 +48,7 @@ public class MetalCDController {
   public String getMetalCD(final Model model, final @PathVariable Long id) {
     final MetalCD metalCD = metalCDService.getMetalCD(id);
     model.addAttribute(METALCD_ATTRIBUTE_NAME, metalCD);
-    return METALCD_ATTRIBUTE_NAME;
+    return METALCD_EDIT_TEMPLATE_NAME;
   }
 
 
@@ -69,7 +69,7 @@ public class MetalCDController {
    */
   @GetMapping("/create")
   public String createMetalCDForm(final Model model) {
-    return "MetalCD/create";
+    return "metalcd/create";
   }
 
   /**
