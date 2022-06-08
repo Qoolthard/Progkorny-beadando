@@ -19,7 +19,7 @@ class MetalCDServiceImplTest {
 	private static final MetalCD NUMBER_OF_THE_BEAST_METALCD = new MetalCD(1L, "Number of the beast", Genre.HEAVY, Type.MAXI);
 	private static final MetalCD TOXICITY_METALCD = new MetalCD(2L, "Toxicity", Genre.NUMETAL, Type.MINI);
 	private static final MetalCD SILVERSIDE_METALCD = new MetalCD(3L, "Silverside", Genre.CLASSIC, Type.MINI);
-	private static final List<MetalCD> ROLE_PLAYS = List.of(
+	private static final List<MetalCD> MetalCDs = List.of(
 			NUMBER_OF_THE_BEAST_METALCD,
 			TOXICITY_METALCD,
 			SILVERSIDE_METALCD
@@ -31,7 +31,7 @@ class MetalCDServiceImplTest {
 
 	@BeforeEach
 	void setUp() {
-		underTest = new MetalCDServiceImpl(ROLE_PLAYS);
+		underTest = new MetalCDServiceImpl(MetalCDs);
 	}
 
 	@Test
@@ -39,7 +39,7 @@ class MetalCDServiceImplTest {
 		// when
 		final List<MetalCD> actual = underTest.getAllMetalCDs();
 		// then
-		assertThat(actual).isEqualTo(ROLE_PLAYS);
+		assertThat(actual).isEqualTo(MetalCDs);
 	}
 
 	@Test
