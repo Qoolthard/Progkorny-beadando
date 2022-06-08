@@ -86,7 +86,7 @@ public class MetalCD {
             + "id=" + id
             + ", name='" + name + '\''
             + ", genre=" + genre
-            + ", complexity=" + type
+            + ", type=" + type
             + '}';
   }
 }
