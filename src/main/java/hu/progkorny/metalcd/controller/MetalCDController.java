@@ -93,7 +93,7 @@ public class MetalCDController {
       // Ignored
     }
     final List<MetalCD> metalCDS = metalCDService.getAllMetalCDs();
-    model.addAttribute("MetalCDs", metalCDS);
+    model.addAttribute("metalcds", metalCDS);
     return METALCD_LIST_TEMPLATE_NAME;
   }
 }
