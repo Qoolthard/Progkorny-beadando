@@ -17,9 +17,9 @@
 <div class="container">
     <h3 class="pt-5">Metal CD listája</h3>
 
-    <a th:href="@{/metalcd/create}"
+    <a th:href="@{/metal-cd/create}"
        type="button"
-       class="btn btn-info">Új Metal CD hozzá adása</a>
+       class="btn btn-info">Új Metal CD hozzáadása</a>
 
     <table class="table table-striped pt-5">
         <caption>Metal CD listája</caption>
@@ -40,10 +40,10 @@
             <td th:text="${metalCD.genre}"></td>
             <td th:text="${metalCD.type}"></td>
             <td>
-                <a th:href="@{'/metalcd/' + ${metalCD.id}}"
+                <a th:href="@{'/metal-cd/' + ${metalCD.id}}"
                    type="button"
                    class="btn btn-warning">Szerkesztés</a>
-                <a th:href="@{'/metalcd/' + ${metalCD.id} +  '/delete'}"
+                <a th:href="@{'/metal-cd/' + ${metalCD.id} +  '/delete'}"
                    type="button"
                    class="btn btn-danger">Törlés</a>
             </td>

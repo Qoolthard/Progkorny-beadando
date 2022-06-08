@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * CONTROLLER CLASS.
  */
 @Controller
-@RequestMapping("/metalcd")
+@RequestMapping("/metal-cd")
 public class MetalCDController {
 
   private static final String METALCD_LIST_TEMPLATE_NAME = "metalcd/list";
