@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
  * CONTROLLER CLASS REST.
  */
 @RestController
-@RequestMapping("/api/v1/metalcd")
+@RequestMapping("/api/v1/metal-cd")
 public class MetalCDRestController {
 
   private final MetalCDService metalCDService;
