@@ -3,7 +3,7 @@ package hu.progkorny.metalcd.model;
 import java.util.Objects;
 
 /**
- * METAL CD MODEL CLASS.
+ * THIS IS METAL CD MODEL CLASS .
  */
 public class MetalCD {
 
