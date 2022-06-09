@@ -21,9 +21,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/metal-cd")
 public class MetalCDController {
 
-  private static final String METALCD_LIST_TEMPLATE_NAME = "metalCD/list";
-  private static final String METALCD_EDIT_TEMPLATE_NAME = "metalCD/edit";
-  private static final String METALCD_ATTRIBUTE_NAME = "metalCD";
+  private static final String METALCD_LIST_TEMPLATE_NAME = "metalcd/list";
+  private static final String METALCD_EDIT_TEMPLATE_NAME = "metalcd/edit";
+  private static final String METALCD_ATTRIBUTE_NAME = "metalcd";
 
   private final MetalCDService metalCDService;
 
